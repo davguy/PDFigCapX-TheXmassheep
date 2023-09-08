@@ -4,7 +4,7 @@ Credits also to jtrells who added the python3 branch from which this is derived 
 # How to run stuff
 ### Prerequisits:
 The IDE I use is visual studio code
-in addition the way I run it requires the VSCode DevContainer extension (and possibly also the Docker extension)
+in addition the way I run it requires the VSCode DevContainer extension (and possibly also the Docker extension) -> also Docker desktop needs to be running when opening the script. 
 
 ### First important tip:
 - This script is meant to be run in a development container. I do not know what this means in detail but the easiest way to get it running is to open the folder in VSCode (make sure you are directly in the folder where the dockerfile is located) and then if you have the DevContainer extension installed it should suggest to you to run the container. 
