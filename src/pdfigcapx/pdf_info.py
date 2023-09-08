@@ -52,10 +52,10 @@ def pdf_info(html_file_path, pdf):
             html_info = json.load(json_data)
     else:
         browser = webdriver.Chrome(executable_path='/usr/bin/chromedriver-linux64/chromedriver', options=chrome_options)
-        print("page_no is set to: " + page_no)
+        print("page_no is set to: " + str(page_no))
         print("starting to process pages with selenium")
         for page_id in range(page_no):
-            print("page " + page_id + " is being processed by selenium")
+            print("page " + str(page_id) + " is being processed by selenium")
             page = for_counting[page_id]
             html_file = 'file://' + html_file_path + '/' + page[:-4] + '.html'
             list_of_htmls.append(html_file)
@@ -183,7 +183,7 @@ def pdf_info(html_file_path, pdf):
 
 def read_each_html(x):
     #browser = webdriver.Chrome('/home/pengyuan/chromedriver')
-    #browser = webdriver.Chrome('/usa/pengyuan/Documents/RESEARCH/PDFigCapX/chromedriver/chromedriver')
+    #browser = webdriver.Chrome('/usa/pengyuan/Documents/RESEARCH/PDFigCapX-TheXmassheep/chromedriver/chromedriver')
     # browser.implicitly_wait(2)
     browser.get(x)
     page_layout = browser.find_element_by_xpath("/html/body/img")

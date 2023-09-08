@@ -31,11 +31,11 @@ import time
 
 if __name__ == "__main__":
 
-    input_path = '/workspaces/PDFigCapX/input-pdf/'
-    output_path = '/workspaces/PDFigCapX/output-pdf/'
+    input_path = '/workspaces/PDFigCapX-TheXmassheep/input-pdf/'
+    output_path = '/workspaces/PDFigCapX-TheXmassheep/output-pdf/'
     xpdf_path = output_path + 'xpdf/'
     print("XPDF path \n" + xpdf_path)
-    log_file = output_path + '/log.text'
+    log_file = output_path + 'log.text' # changed the last part of this line from '/log.text' to 'log.text'
     f_log = open(log_file, 'w')
     if not os.path.isdir(xpdf_path):
         os.mkdir(xpdf_path)

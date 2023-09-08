@@ -23,7 +23,7 @@ def render_pdf(filepath: str) -> List[Image.Image]:
         and not filename.startswith('.') and filename.endswith('.png')
     ]
     img_paths = natural_sort(img_paths)
-
+    print("image path list length = " +str(len(img_paths)))
     images = []
     print("initialised the image cvariable with length " + str(len(images)))
     for img_path in img_paths:
