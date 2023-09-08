@@ -1,0 +1,1 @@
+['Figure 2. Zoning function.', 'Note: The figure shows a stylized example', 'of a zoning function that maps every', 'location to a conflict zone (Y = 1; red', 'area) and non-conflict zone (Y = 0;', 'remaining white area).']

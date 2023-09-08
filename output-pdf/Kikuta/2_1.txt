@@ -1,0 +1,1 @@
+['Figure 1. Zones of the Somali Civil War.', 'Note: The figure maps conflict zones of the Somali Civil War (1989–2017) created by existing zoning methods. All of the results are cre-', 'ated from the same dataset of conflict events (UCDP GED; black dots).']
