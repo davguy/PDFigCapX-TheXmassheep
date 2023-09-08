@@ -11,7 +11,7 @@ in addition the way I run it requires the VSCode DevContainer extension (and pos
 - Then you are able to run stuff from the VSCode terminal!
 
 ### Important note on what commands to use and where to put files:
-The file you want being processed needs to sit in the input-pdf directory. I have not tested this but I recommend only putting one file there (IMOPORTANT -> see point on filenames).
+The file you want being processed needs to sit in the input-pdf directory. I have not tested this but I recommend only putting one file there (IMPORTANT -> see point on filenames).
 The command to run things in the dev container terminal (named bash <yourcontainername>)is the following:
  
  /opt/conda/envs/pdfigcapx/bin/python src/pdfigcapx/FigCap.py
@@ -20,10 +20,10 @@ File outputs:
 The script creates output folders in the xpdf directory and creates a designated output for the processed pdf file. The output directory can be left messy. The script sufficiently checks for duplicates.
 
 ### A Problem which will MOST LIKLEY OCCUR -> 
-The Chromedriver is downloaded from a static link -> meaning that one specific version is downloads
-The chrome-browser, however, which it needs to run, is downloaded from the google-link which always provides the newer version. 
-ALWAYS CHECK whether the versions match when you encounter an error hinting at issues with selenium, the chromdriver or google-chrome
-currently we are using version 116.0.5845.179 of chrome and version 116.0.5845.96 of the chrome driver.
+- The Chromedriver is downloaded from a static link -> meaning that one specific version is downloaded.
+- The chrome-browser, however, which it needs to run, is downloaded from the google-link which always provides the newer version. 
+- ALWAYS CHECK whether the versions match, when you encounter an error hinting at issues with selenium, the chromdriver or google-chrome.
+- Currently we are using version 116.0.5845.179 of chrome and version 116.0.5845.96 of the chrome driver.
 --> when you have to change the chromdriver -> make sure that the filepaths are still correct. The dockerfile creates the container with both executables moved to the /usr/bin directory. Navigate there via the bash terminal from the built up dev container and look for the corresponding filenames.
 
 ALSO:
