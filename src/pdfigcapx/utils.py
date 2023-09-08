@@ -18,7 +18,7 @@ def natural_sort(arr: List[str]) -> List[str]:
     return sorted(arr, key=alphanum_key)
 
 
-def pdf2images(file_path: str, output_path: str, dpi=300) -> None:
+def pdf2images(file_path: str, output_path: str, dpi=500) -> None:
     """ convert PDF to images and save them on output location """
     gs_cmd = f"gs -q -sDEVICE=png16m \
         -o {join(output_path, 'file-%02d.png')} -r{dpi} {file_path}"

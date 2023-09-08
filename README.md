@@ -36,6 +36,18 @@ The script does not do well with fancy filenames. PDF files to be processed shou
 ### One more note on print statements:
 I have added a lot of print staments to test where the code breaks. I have not removed them yet. Dont let them confuse you.
 
+## Features
+this section is dedicated to where you can adjust things to your liking:
+### Image resolution
+to change the image resolution of your outputted images you can change the dpi value in the pdf2images function. The pdf2images function is located on line 21 in the utils.py script.
+### Textbox detection
+some of the crucial code parts are located around line 125 in the xpdf_process.py script. I havent looked into further detail yet. But you can expand the array of terms this function checks for.
+In my usecase it is helpful for example to also check for things like "Map" or "source" to get additional infos about the maps I am looking at.
+
+-> the script predominantly checks for the word "fig".
+
+I added soe things for example to look for sources - which seems to work partially. HAve yet to figure out how to do the same for maps.
+
 ## Documentation of changes I made to the original script
 
 ### Resolve the relative import nightmare:
@@ -145,3 +157,11 @@ Modified:
   
 
   Eventually resolved by matching the chrome versions. 
+
+
+
+  ## Open ends for possible improvement
+  The script still has issues with finding titles or captions that are located further away from the image.
+  - possible solutions:
+    - look more deeply into how the captions are identified. And possible increase the area from which these are looked for
+    - see the features note on this in this readme -> ntry points for improvement.

@@ -125,9 +125,9 @@ def box_detection(html_file_path, info, html_boxes):
                 # if e.size['width'] > info['row_width']-100:
                 page_word_box.append([max(e[0][0] - info['row_height'], 0), e[0][1], e[0][2] + 2 * info['row_height'],
                                      e[0][3]])
-                if text.startswith('Table') or text.startswith('table') or text.startswith('Box'):
+                if text.startswith('Table') or text.startswith('table') or text.startswith('Box') or text.startswith('Map') or text.startswith('map'):
                     table_cap_box.append([e[0][0], e[0][1], e[0][2], e[0][3]])
-                if text.startswith('Fig') or text.startswith('fig') or text.startswith('FIG'):
+                if text.startswith('Fig') or text.startswith('fig') or text.startswith('FIG') or text.startswith('Source') or text.startswith('source'):
                     # print text
                     text_box.append([e[0][0], e[0][1], e[0][2], e[0][3]])
                     cap_no_clue.append(text)
