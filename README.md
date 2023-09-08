@@ -1,5 +1,5 @@
 important first note: this is my local branch from the repository of pengyuanli https://github.com/pengyuanli/PDFigCapX
-i dod not come up with the code. This repo is to make things run on my local machiene
+i did not come up with the code. This repo is to make things run on my local machiene
 Credits also to jtrells who added the python3 branch from which this is derived https://github.com/pengyuanli/PDFigCapX/tree/python3
 # How to run stuff
 ### Prerequisits:
